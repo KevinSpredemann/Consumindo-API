@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Consumindo Api de Previsão do Tempo e CEP</title>
+</head>
+<body>
+    <div id="header">
+        <div id="title">
+            DncWeather
+        </div>
+        <div id="links-header">
+            <a id="link-1">Endereços</a>
+            <a id="link-2">Previsão do tempo</a>
+        </div>
+    </div>
+    <div id="principal">
+        <div id="title-principal">
+            <h1>Descubra Mais com Precisão:<br>
+                Previsões do Tempo e endereços<br>
+                em tempo real.</h1>
+            <img src="./image-h1.svg">
+        </div> 
+        <div id="form">
+            <form id="form-one" target="_blank" action="https://formspree.io/f/mleqaojr" method="post">
+                <label>Primeiro Nome:</label><br>
+                <input class="input-form" type="text" placeholder="Insira seu primeiro nome:" name="Name" required /><br>
+                <label>E-mail:</label><br>
+                <input class="input-form" type="email" placeholder="Insira seu e-mail" name="Email" required /><br>
+                <label>Digite o CEP:</label><br>
+                <input id="cep" class="input-form" type="text" placeholder="Insira o CEP" name="CEP" value="" required /><br>
+                <label>Digite a latitude e longitude para saber a previsão:</label><br>
+                <input class="input-previsao" type="text" id="Latitude" placeholder="Latitude" name="Latitude" value="" required />
+                <input type="text" class="input-previsao" id="Longitude" placeholder="Longitude" name="Longitude" value="" required /><br>
+                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                <button onclick="getAddressByCep(), viaCep()" type="submit" id="input-acessar">Acessar</button>
+              </form>
+        </div>
+        <div id="CEP">
+            <div id="first-content">
+                <h1 id="h1-cep">Resultado da busca por CEP:</h1>
+                <img width="100px" src="./cep-image.svg">
+            </div>
+            <div id="second-content">
+                <div id="description">
+                    <a>
+                        Logradouro/nome
+                    </a>
+                    <a>
+                        Bairro/Distrito
+                    </a>
+                    <a>
+                        Localidade/UF
+                    </a>
+                </div>
+                <div id="content">
+                    <p readonly id="Logradouro" class="content-class">
+                       ...     
+                    </p>
+                    <p readonly id="Bairro" class="content-class">
+                       ...                        
+                    </p>
+                    <p readonly id="Localidade" class="content-class">
+                       ...                    
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="Temperature">
+            <div id="title-temperature">
+                <h1 id="h1-temperature">Previsão do tempo na região:</h1>
+                <img width="100px" src="./image-temperature.svg">
+            </div>
+            <div id="second-temperature">
+                <p id="result-temperature">
+                    ...
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <a>Termos de Uso</a>
+            <a id="second-child">Política de Privacidade</a>
+        </div>
+    </footer>         
+    <script src="./script.js"></script>
+</body>
+</html>

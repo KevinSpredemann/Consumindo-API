@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+#header{
+    display: grid;
+    grid-auto-flow: column;
+    background-color: rgba(12, 112, 242, 1);
+    width: 100%;
+    height: 52px;
+}
+
+#title{
+    color: rgba(255, 255, 255, 1);
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-right: 900px;
+}
+
+#links-header{
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    font-weight: 800;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#link-1:hover{
+    color: #CCCCCC;
+}
+
+#link-2:hover{
+    color: #CCCCCC;
+}
+
+#link-1{
+    margin-right: 25px;
+}
+
+
+#title-principal{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    padding-top: 90px;
+    margin-bottom: 100px;
+}
+
+#title-principal h1{
+    color:rgba(31, 31, 31, 1);
+    font-weight: 800;
+    margin-left: 200px;
+}
+
+#title-principal img{
+    width: 200px;
+    margin-bottom: 70px;
+}
+
+#principal{
+    background-color:rgba(242, 242, 242, 1);
+    padding-bottom: 400px;
+}
+
+#form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+    width: 659px;
+    height: 730px;
+    margin-left: 300px;
+    border-radius: 20px;
+    padding: 0px 40px 0px 40px;
+    margin-bottom: 400px;
+}
+
+.input-form{
+    border: none;
+    background-color: rgba(242, 242, 242, 0.9);
+    padding: 15px 392px 15px 7px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: rgba(57, 57, 57, 0.5);
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.input-form::placeholder{
+    padding-left: 10px;
+}
+
+#form label{
+    font-size: 20px;   
+    font-weight: 500;
+    margin-left: 5px;
+    
+}
+
+.input-previsao{
+    padding: 15px 112px 15px 7px;
+    border: none;
+    background-color: rgba(242, 242, 242, 0.9);
+    border-radius: 5px;
+    font-size: 12px;
+    color: rgba(57, 57, 57, 0.5);
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.input-previsao::placeholder{
+    padding-left: 10px;
+}
+
+#input-acessar{
+    background: rgba(12, 112, 242, 0.9);
+    padding: 10px 245px 10px 245px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+    animation: botao-infinito 3s infinite linear;
+}
+
+#input-acessar:hover{
+    background-color: rgba(38, 116, 219, 0.9) ;
+}
+
+@keyframes botao-infinito {
+    0%{
+        transform: scale(1);  
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+
+#first-content{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+#h1-cep{
+    margin-left: 400px;
+    font-weight: 800;
+}
+
+#first-content img{
+    margin-right: 320px;
+    margin-bottom: 40px;
+}
+
+#second-content{
+    margin-left: 300px;
+    margin-bottom: 200px;
+}
+
+
+#description{
+    width: 500px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:rgba(12, 112, 242, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    
+}
+
+#content{
+    margin-bottom: 20px;
+    width: 500px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: rgba(31, 31, 31, 1);
+    font-weight: 600;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+#title-temperature{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+#h1-temperature{
+    margin-left: 400px;
+    font-weight: 800;
+}
+
+#title-temperature img{
+    margin-right: 360px;
+    margin-bottom: 25px;
+}
+
+#second-temperature{
+    margin-left: 300px;
+    margin-bottom: 20px;
+    width: 500px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-size: 13px;
+    color: rgba(31, 31, 31, 1);
+    font-weight: 800;
+    border-radius: 30px;
+    border: solid 2px rgba(12, 112, 242, 1);
+}
+
+footer {
+    background-color: rgba(12, 112, 242, 1);
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 15px 0px 15px 0px;
+}
+
+footer a{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    padding: 0px 9px 0px 9px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+footer a:hover{
+    color: #CCCCCC;
+}
+
+footer a:first-child{
+    border-right: 2px solid white ;
+} 
+
+#second-child{
+    padding-right: 20px;
+}
